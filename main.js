@@ -21,7 +21,7 @@ socket.on('AI_DO_NGAT_KET_NOI', peerId => {
 socket.on('DANG_KY_THAT_BAI', () =>  alert('vui long chon ten khac'));
 
 function openStream(){
-	const config = { audio: true, video: false};
+	const config = { audio: true, video: true};
 	return navigator.mediaDevices.getUserMedia(config);
 }
 function playStream(idVideoTag, stream) {
